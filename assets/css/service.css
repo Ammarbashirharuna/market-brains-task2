@@ -1,0 +1,220 @@
+
+/* Apply a box-sizing rule globally to ensure padding/margins are accounted for in width/height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body does not cause any overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Poppins', sans-serif; /* Use the font you're working with */
+}
+.hero-services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4; /* You can change this to a background image if needed */
+    padding: 0 20px;
+    margin-top: -3%;
+  }
+
+  .hero-services h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+.image-containeer{
+    width: 100%;
+}
+.image-containeer img{
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+  /* Adjust heading font size for smaller screens */
+  @media (max-width: 768px) {
+    .hero-services h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .services-section{
+    margin-top: -5%;
+  }
+
+  @media (max-width: 480px) {
+    .hero-services h1 {
+      font-size: 1rem;
+      margin-top: 5%;
+  }
+
+}
+
+
+  .hero-services .image-container {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+  }
+
+  .hero-services .image-containeer img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-services .image-containeer img {
+      max-width: 80%;
+      margin-top: 5%;
+      margin-left: 5%;
+
+    }
+   
+  }
+
+  @media (max-width: 480px) {
+    .hero-services .image-containeer img {
+      max-width:12rem;
+    }
+  .container-service h1{
+    text-align: center;
+    margin-top: -8%;
+  }
+    .image-containeer img{
+        max-width: 50%;
+    }
+
+  }
+
+/* banner styling */
+.banner {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    background-color: rgba(152, 190, 36, 1);
+    padding: 20px;
+    width: 120%;
+    padding-left: 20px;
+  
+  }
+
+  /* Tablet devices */
+  @media screen and (max-width: 768px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        margin-bottom: 10%;
+    }
+  }
+
+  /* Mobile devices */
+  @media screen and (max-width: 480px) {
+    .banner {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: -3%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .banner{
+        padding: 15px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: -10%;
+    }
+    .banner i{
+        font-size: 10px;
+        margin-top: -2px;
+    }
+    .banner span{
+        display: none;
+    }
+  }
+  /* services section */
+  .explore-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px; /* Adjust to your liking */
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.text-center{
+    margin-top: -2%;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .explore-heading {
+        font-size: 2rem;
+    
+    }
+}
+
+@media (max-width: 576px) {
+    .explore-heading {
+        font-size: 1.8rem;
+        padding-top: 10px;
+    }
+}
+/* our services  */
+.services-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+  }
+  /* Image Styling */
+  .services-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Text and Image Alignment */
+  .services-section .row {
+    margin-bottom: 50px;
+    padding: 0 15px; /* Ensure padding inside the row */
+  }
+  
+  .services-section .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Responsive adjustments for large screens */
+  @media (min-width: 1200px) {
+    .services-section .col-md-6 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 767px) {
+    .services-section .row {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+  
+    .services-section img {
+      margin-bottom: 20px;
+    }
+  }
+

@@ -1,0 +1,108 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body does not cause any overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Poppins', sans-serif; /* Use the font you're working with */
+}
+#contact {
+    padding: 50px 20px;
+  }
+  
+  .contact-title {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* color: r:rgba(30, 97, 140, 1);; */
+  }
+  .contact-title span{
+    color: rgba(30, 97, 140, 1);
+  }
+  
+  .contact-description {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border: 1px solid #008cba;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+  }
+  
+  .btn-share {
+    background-color:rgba(152, 190, 36, 1);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .btn-share:hover {
+    background-color: darkgreen;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .contact-icons .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-icons .icon i {
+    font-size: 24px;
+    color: black;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      max-width: 100%;
+    }
+  
+    .btn-share {
+      width: 100%;
+    }
+  
+    .contact-icons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  

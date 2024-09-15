@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body does not cause any overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Poppins', sans-serif; /* Use the font you're working with */
+}
+.text-center{
+    font-weight: bold;
+}
+.portfolio {
+    position: relative;
+    padding: 80px 0;
+  }
+
+  .text-center{
+    margin-top: -12%;
+  }
+  
+  .portfolio .row {
+    width: 1920px; /* Set the width of the image container */
+    height: 1088px; /* Set the height of the image container */
+    position: absolute;
+    top: 325px; /* Position from the top */
+    left: -240px; /* Position from the left */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .portfolio-item {
+    flex: 1 1 30%; /* Adjust the flex basis of the grid */
+    margin: 10px;
+  }
+  
+  .portfolio .portfolio-item img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .portfolio .tall-image {
+    height: 450px; /* Taller images */
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio .row {
+      position: static;
+      max-width: 80%;
+      height: auto;
+    }
+  
+    .portfolio h1 {
+      font-size: 24px;
+    }
+  
+    .portfolio .portfolio-item {
+      flex: 1 1 100%;
+    }
+  
+    .portfolio .portfolio-item img, .portfolio .tall-image {
+      height: 200px;
+    }
+  }
+  
